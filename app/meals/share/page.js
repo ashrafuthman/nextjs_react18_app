@@ -17,11 +17,11 @@ export default function ShareMealPage() {
           <div className={classes.row}>
             <p>
               <label htmlFor="name">Your name</label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="creator" required />
             </p>
             <p>
               <label htmlFor="email">Your email</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="creator_email" required />
             </p>
           </div>
           <p>
@@ -41,7 +41,7 @@ export default function ShareMealPage() {
               required
             ></textarea>
           </p>
-          <ImagePicker />
+          <ImagePicker label="image" name="image"/>
           <p className={classes.actions}>
             <button type="submit">Share Meal</button>
           </p>
