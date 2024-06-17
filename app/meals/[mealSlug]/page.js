@@ -29,7 +29,6 @@ export default function MealDetailsPage({ params }) {
       <p className={classes.summary}>{summary}</p>
       </div>
     </header>
-
     <main>
       <p className={classes.instructions}
         dangerouslySetInnerHTML={{
